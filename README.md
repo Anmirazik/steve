@@ -183,6 +183,20 @@ OpenAPI spec
 An export of the actual OpenAPI spec for APIs is available [here](api-docs.json).
 To explore it interactively, open it in the [Live Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/steve-community/steve/refs/heads/master/api-docs.json).
 
+When running SteVe locally, the live Swagger UI is available at:
+
+    http://localhost:<port>/manager/swagger-ui/index.html
+
+The raw OpenAPI JSON spec is served at:
+
+    http://localhost:<port>/manager/v3/api-docs
+
+For the default Docker setup (port 8180):
+
+    http://localhost:8180/manager/swagger-ui/index.html
+
+> **Note:** The Swagger UI is protected behind the standard SteVe login (HTTP Basic Auth). Use the same credentials configured in your `application.properties`.
+
 GDPR
 -----
 If you are in the EU and offer vehicle charging to other people using SteVe, keep in mind that you have to comply to the General Data Protection Regulation (GDPR) as SteVe processes charging transactions, which can be considered personal data.
